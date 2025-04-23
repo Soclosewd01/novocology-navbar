@@ -29,18 +29,46 @@ collapseEl.addEventListener('show.bs.collapse', () => {
 
 
 
-const searchWrapper = document.getElementById('searchWrapper');
-const searchField = document.getElementById('searchField');
-const closeBtn = document.getElementById('closeBtn');
-const crossButton = document.getElementById('#cross-button');
+// const searchWrapper = document.getElementById('searchWrapper');
+// const searchField = document.getElementById('searchField');
+// const closeBtn = document.getElementById('closeBtn');
+// const crossButton = document.getElementById('#cross-button');
 
-searchField.addEventListener('focus', () => {
-  searchWrapper.classList.add('expanded');
-  crossButton.classList.add('d-block');
-});
+// searchField.addEventListener('focus', () => {
+//   searchWrapper.classList.add('expanded');
+//   crossButton.classList.add('d-block');
+// });
 
-closeBtn.addEventListener('click', () => {
-  searchWrapper.classList.remove('expanded');
-  searchField.value = '';
+// closeBtn.addEventListener('click', () => {
+//   searchWrapper.classList.remove('expanded');
+//   searchField.value = '';
   
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const searchWrapper = document.getElementById('searchWrapper');
+  const searchField = document.getElementById('searchField');
+  const searchIcon = document.getElementById('searchIcon');
+  const closeBtn = document.getElementById('closeBtn');
+
+  if (searchIcon) {
+    searchIcon.addEventListener('click', () => {
+      searchWrapper.classList.add('expanded');
+      searchField.focus();
+    });
+  }
+
+  if (searchField) {
+    searchField.addEventListener('focus', () => {
+      searchWrapper.classList.add('expanded');
+    });
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      searchWrapper.classList.remove('expanded');
+      searchField.value = '';
+    });
+  }
 });
+

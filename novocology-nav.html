@@ -66,27 +66,28 @@
                  <li>
                   <!-- Search field -->
                   <div class="search-wrapper" id="searchWrapper">
-                  <div class="input-group">
-                    <input type="text" class="form-control search-input d-none d-md-block" placeholder="Search..."
-                           id="searchField" aria-label="Search">
-                    <span class="mt-2 ml-3"  id="closeBtn" aria-label="Close">
+                    <i class="fa-solid fa-magnifying-glass search-icon d-md-none" id="searchIcon"></i>
+                    <input
+                      type="text"
+                      class="form-control search-input"
+                      placeholder="Recherche"
+                      id="searchField"
+                      aria-label="Search"
+                    />
 
-                      <i class="fa-solid fa-xmark cross-button"></i>
+
+                    <div class="search-actions" id="searchActions">
+                      <select class="form-select w-auto">
+                        <option selected>All</option>
+                        <option>Item 1</option>
+                        <option>Item 2</option>
+                      </select>
+                    </div>
+                  
+                    <span class="close-btn" id="closeBtn" aria-label="Close">
+                      <i class="fa-solid fa-xmark"></i>
                     </span>
-                  </div>
-                  <div class="search-actions align-items-center" id="searchActions">
-                    <select class="form-select w-auto">
-                      <option selected>All</option>
-                      <option>Item 1</option>
-                      <option>Item 2</option>
-                      <option>Item 3</option>
-                      <option>Item 4</option>
-                      <option>Item 5</option>
-                      <option>Item 6</option>
-                      <option>Item 7</option>
-                      <option>Item 8</option>
-                    </select>
-                  </div>
+                  </div>                  
                  </li>
                  <li>
                     <svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="navbar-account__link__icon">
