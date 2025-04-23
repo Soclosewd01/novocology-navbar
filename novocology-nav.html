@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font awesome Kit -->
+    <script src="https://kit.fontawesome.com/522c2f0f91.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Novocology Nav</title>
+
+    <!-- Custom Css -->
+     <link rel="stylesheet" href="./novocology-nav.css">
+  </head>
+  <body>
+    <main>
+      <nav class="navbar fixed-top">
+        <div class="container-fluid px-lg-5 d-flex justify-content-between align-items-center">
+          <!-- Logo - shown on all screens except mobile -->
+          <a class="navbar-brand d-none d-md-flex align-items-center" href="#">
+            <img class="img-fluid" src="./assets/logo.png" alt="novocology-logo" style="max-height: 40px;">
+          </a>
+      
+          <!-- Menu links for desktop version - shown only on lg and up -->
+          <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+            <ul class="d-flex gap-4 list-unstyled text-capitalize mb-0">
+                  <li class="text-capitalize list-unstyled">
+                    <a href="#" class="text-decoration-none" style="font-size: 15px;">
+                       clients
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none" style="font-size: 15px;">
+                       chantiers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none" style="font-size: 15px;">
+                       tickets
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none" style="font-size: 15px;">
+                       planning
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none" style="font-size: 15px;">
+                       ringover
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none" style="font-size: 15px;">
+                       agenda
+                    </a>
+             </div>
+        
+            </ul>
+
+            <div class="icons-container">
+               <ul class="d-flex gap-2 align-items-center flex-wrap list-unstyled">
+                 <li>
+                  <!-- Search field -->
+                  <div class="search-wrapper" id="searchWrapper">
+                  <div class="input-group">
+                    <input type="text" class="form-control search-input d-none d-md-block" placeholder="Search..."
+                           id="searchField" aria-label="Search">
+                    <span class="mt-2 ml-3"  id="closeBtn" aria-label="Close">
+
+                      <i class="fa-solid fa-xmark cross-button"></i>
+                    </span>
+                  </div>
+                  <div class="search-actions align-items-center" id="searchActions">
+                    <select class="form-select w-auto">
+                      <option selected>All</option>
+                      <option>Item 1</option>
+                      <option>Item 2</option>
+                      <option>Item 3</option>
+                      <option>Item 4</option>
+                      <option>Item 5</option>
+                      <option>Item 6</option>
+                      <option>Item 7</option>
+                      <option>Item 8</option>
+                    </select>
+                  </div>
+                 </li>
+                 <li>
+                    <svg width="1em" height="1em" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="navbar-account__link__icon">
+                      <path d="M15 30C6.72875 30 0 23.2713 0 15C0 6.72875 6.72875 0 15 0C23.2713 0 30 6.72875 30 15C30 23.2713 23.2713 30 15 30ZM15 1.25C7.41875 1.25 1.25 7.41875 1.25 15C1.25 22.5813 7.41875 28.75 15 28.75C22.5813 28.75 28.75 22.5813 28.75 15C28.75 7.41875 22.5813 1.25 15 1.25Z" fill="currentColor"></path>
+                      <path d="M20.625 10H9.375C9.03 10 8.75 9.72 8.75 9.375C8.75 9.03 9.03 8.75 9.375 8.75H20.625C20.97 8.75 21.25 9.03 21.25 9.375C21.25 9.72 20.97 10 20.625 10Z" fill="currentColor"></path>
+                      <path d="M20.625 15.625H9.375C9.03 15.625 8.75 15.345 8.75 15C8.75 14.655 9.03 14.375 9.375 14.375H20.625C20.97 14.375 21.25 14.655 21.25 15C21.25 15.345 20.97 15.625 20.625 15.625Z" fill="currentColor"></path>
+                      <path d="M20.625 21.25H9.375C9.03 21.25 8.75 20.97 8.75 20.625C8.75 20.28 9.03 20 9.375 20H20.625C20.97 20 21.25 20.28 21.25 20.625C21.25 20.97 20.97 21.25 20.625 21.25Z" fill="currentColor"></path>
+                  </svg>
+                 </li>
+                  <li>
+                     <i class="fa-solid fa-gear"></i>
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-bell"></i>
+                  </li>
+                  <li class="d-flex justify-content-center align-items-center gap-2">
+                     <img width="24px" height="24px" src="./assets/super-admin.jpg" alt="admin-profile">
+
+                     <!-- collapse -->
+                     <div class="position-relative d-inline-block" id="dropdown-wrapper">
+                      <p>
+                        <a class="mt-4" data-bs-toggle="collapse" href="#smartCollapse" role="button" aria-expanded="false" aria-controls="smartCollapse">
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                      </p>
+                      <div class="collapse position-absolute z-3 mt-1" id="smartCollapse" style="min-width: 200px;">
+                        <div class="card card-body p-2">
+                          Smart dropdown that auto aligns!
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+               </ul>
+            </div>
+
+            <!-- Menubutton - shown only on xs to lg -->
+            <a class="d-block d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
+              <i class="fa-sharp fa-solid fa-bars fs-1" style="color: #054188"></i>
+            </a>
+          </div>
+        </div>
+          <!-- Offcanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <!-- Offcanvas header -->
+            <div class="offcanvas-header">
+              <span class="offcanvas-title" id="offcanvasExampleLabel">
+                <a class="navbar-brand" href="#">
+                  <img class="img-fluid w-50" src="./assets/logo.png" alt="novocology-logo">
+                </a>
+              </span>
+              <span type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-sharp-duotone fa-solid fa-xmark fs-1" style="color: #054188" ></i>
+              </span>
+            </div>
+
+
+            <!-- Offcanvas body -->
+            <div class="offcanvas-body">
+              <!-- Menu links -->
+               <div>
+                  <ul>
+                    <li class="text-capitalize list-unstyled my-md-2">
+                      <a href="#" class="text-decoration-none" style="font-size: 15px;">
+                         clients
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                         chantiers
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                         tickets
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                         planning
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                         ringover
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                         agenda
+                      </a>
+                    </li>
+                  </ul>
+               </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </main>
+
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Js -->
+     <script src="./novocology.js"></script>
+  </body>
+</html>

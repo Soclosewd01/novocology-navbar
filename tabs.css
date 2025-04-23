@@ -1,0 +1,60 @@
+.nav-tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: none;
+  display: flex;
+  margin-bottom: 0;
+  border-bottom: 3px solid #13438c;
+}
+
+/* Tab item buttons */
+.nav-tabs .nav-link {
+  border: none;
+  border-radius: 10px 10px 0 0;
+  background-color: #e8e8e8;
+  color: #333;
+  padding: 8px 40px;
+  margin-right: 0;
+  position: relative;
+  z-index: 1; 
+}
+
+
+/* Active tab */
+.nav-tabs .nav-link.active {
+  background-color: #13438c;
+  color: #fff;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.nav-tabs .nav-link::before {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  bottom: 0;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+  clip-path: polygon(100% 1%, 0% 100%, 100% 100%);
+  border-top-left-radius: 0px;
+}
+
+
+.nav-tabs .nav-link::after {
+  content: '';
+  background-color: inherit;
+  position: absolute;
+  bottom: 0;
+  right: -10px;
+  width: 24px;
+  height: 24px;
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+} 
+
+/* Hover for inactive tabs */
+.nav-tabs .nav-link:hover:not(.active) {
+  background-color: #d9d9d9;
+}
+
+
