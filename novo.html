@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font awesome Kit -->
+    <script src="https://kit.fontawesome.com/522c2f0f91.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Novocology Nav</title>
+    <link rel="stylesheet" href="./novo.css">
+  </head>
+  <body>
+    <main>
+      <nav class="navbar fixed-top shadow-lg">
+        <div class="container-fluid px-lg-5 d-flex flex-nowrap">
+          <!-- Logo container -->
+          <div class="logo-container">
+            <a class="navbar-brand d-none d-sm-flex" href="#">
+              <img class="img-fluid" src="./assets/logo.png" alt="novocology-logo" style="max-height: 40px;">
+            </a>
+          </div>
+          
+          <!-- Menu links for desktop version - shown only on lg and up -->
+          <div class="nav-links d-none d-xl-flex">
+            <ul>
+              <li>
+                <a href="#" class="text-decoration-none" style="font-size: 13px; font-weight: 400;">clients</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="font-size: 13px; font-weight: 400;">chantiers</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="font-size: 13px; font-weight: 400;">tickets</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="font-size: 13px; font-weight: 400;">planning</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="font-size: 13px; font-weight: 400;">ringover</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="font-size: 13px; font-weight: 400;">agenda</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="font-size: 13px; font-weight: 400;">agenda</a>
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none" style="font-size: 13px; font-weight: 400;">agenda</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Icons container wrapper -->
+          <div class="icons-container-wrapper">
+            <div class="icons-container">
+              <ul>
+                <li>
+                  <!-- Search field -->
+                  <div class="search-wrapper" id="searchWrapper">
+                    <input
+                      type="text"
+                      class="form-control search-input px-1 py-0 position-relative"
+                      placeholder="Recherche"
+                      id="searchField"
+                      aria-label="Search"
+                    />
+                    <span class="search-icon" id="searchIcon">
+                        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </span>
+                    <div class="search-actions" id="searchActions">
+                      <select class="form-select w-auto">
+                        <option selected>All</option>
+                        <option>Item 1</option>
+                        <option>Item 2</option>
+                        <option>Item 3</option>
+                        <option>Item 4</option>
+                        <option>Item 5</option>
+                        <option>Item 6</option>
+                        <option>Item 7</option>
+                      </select>
+                    </div>
+                    <span class="close-btn" id="closeBtn" aria-label="Close">
+                      <i class="fa-solid fa-xmark"></i>
+                    </span>
+                  </div>                  
+                </li>
+                <li>
+                  <svg width="22px" height="22px" viewBox="0 0 30 30" fill="#054188" xmlns="http://www.w3.org/2000/svg" class="navbar-account__link__icon">
+                    <path d="M15 30C6.72875 30 0 23.2713 0 15C0 6.72875 6.72875 0 15 0C23.2713 0 30 6.72875 30 15C30 23.2713 23.2713 30 15 30ZM15 1.25C7.41875 1.25 1.25 7.41875 1.25 15C1.25 22.5813 7.41875 28.75 15 28.75C22.5813 28.75 28.75 22.5813 28.75 15C28.75 7.41875 22.5813 1.25 15 1.25Z" fill="currentColor"></path>
+                    <path d="M20.625 10H9.375C9.03 10 8.75 9.72 8.75 9.375C8.75 9.03 9.03 8.75 9.375 8.75H20.625C20.97 8.75 21.25 9.03 21.25 9.375C21.25 9.72 20.97 10 20.625 10Z" fill="currentColor"></path>
+                    <path d="M20.625 15.625H9.375C9.03 15.625 8.75 15.345 8.75 15C8.75 14.655 9.03 14.375 9.375 14.375H20.625C20.97 14.375 21.25 14.655 21.25 15C21.25 15.345 20.97 15.625 20.625 15.625Z" fill="currentColor"></path>
+                    <path d="M20.625 21.25H9.375C9.03 21.25 8.75 20.97 8.75 20.625C8.75 20.28 9.03 20 9.375 20H20.625C20.97 20 21.25 20.28 21.25 20.625C21.25 20.97 20.97 21.25 20.625 21.25Z" fill="currentColor"></path>
+                  </svg>
+                </li>
+                <li>
+                  <svg width="16px" height="16px" viewBox="0 0 24 24" stroke-width="3" xmlns="http://www.w3.org/2000/svg" fill="#054188"><path d="M20.017 14.669L23 13.564l-.012-3.208-2.996-1.085a8.455 8.455 0 0 0-.437-1.05l1.329-2.893-2.277-2.26-2.886 1.351a8.396 8.396 0 0 0-1.052-.436L13.564 1l-3.208.012-1.085 2.996a8.485 8.485 0 0 0-1.05.437L5.328 3.116l-2.26 2.276L4.419 8.28a8.378 8.378 0 0 0-.436 1.052L1 10.436l.012 3.208 2.996 1.085a8.46 8.46 0 0 0 .437 1.05l-1.329 2.893 2.276 2.26 2.887-1.351a8.383 8.383 0 0 0 1.052.436L10.436 23l3.208-.012 1.085-2.996a8.478 8.478 0 0 0 1.05-.437l2.893 1.329 2.26-2.276-1.351-2.887a8.382 8.382 0 0 0 .436-1.052zm-.287 3.73l-1.275 1.285-2.694-1.238-.429.215a7.612 7.612 0 0 1-.928.385l-.452.156-1.01 2.789-1.81.007-1.03-2.779-.456-.151a7.394 7.394 0 0 1-.926-.385l-.43-.21-2.688 1.257-1.286-1.275 1.239-2.695-.216-.43a7.551 7.551 0 0 1-.386-.926l-.155-.452-2.79-1.01-.005-1.81 2.777-1.03.152-.456a7.46 7.46 0 0 1 .384-.927l.212-.43L4.27 5.601l1.275-1.285 2.694 1.238.429-.215a7.612 7.612 0 0 1 .928-.385l.452-.156 1.01-2.789 1.81-.007 1.03 2.779.456.151a7.35 7.35 0 0 1 .925.385l.43.211L18.4 4.27l1.285 1.275-1.239 2.695.216.43a7.551 7.551 0 0 1 .386.926l.155.452 2.79 1.01.005 1.81-2.777 1.03-.152.456a7.46 7.46 0 0 1-.384.927l-.212.43zM12 7.2a4.8 4.8 0 1 0 4.8 4.8A4.8 4.8 0 0 0 12 7.2zm0 8.6a3.8 3.8 0 1 1 3.8-3.8 3.804 3.804 0 0 1-3.8 3.8z"/><path fill="none" d="M0 0h24v24H0z"/></svg>
+                </li>
+                
+                <li class="position-relative">
+                    <i class="fa-regular fa-bell notification-bell fw-lighter notification-deactive" style="font-weight: 100;"></i>
+                    <img width="24px" height="24px" src="./assets/alarm.gif" alt="bell-icon">
+                    <span class="position-absolute notification-badge">3</span>
+                </li>
+
+                <li class="d-flex justify-content-center align-items-center gap-2">
+                  <img class="rounded-circle" width="24px" height="24px" src="./assets/super-admin.jpg" alt="admin-profile">
+                  <span class="fw-semibold text-capitalize d-none d-md-block" style="color: #054188; font-size: 12px;">Super Admin</span>
+                  <!-- collapse -->
+                  <div class="position-relative d-inline-block" id="dropdown-wrapper">
+                      <span data-bs-toggle="collapse" href="#smartCollapse" role="button" aria-expanded="false" aria-controls="smartCollapse">
+                            <i class="fa-solid fa-chevron-down" style="font-size: 12px;"></i>
+                      </span>
+                    <!-- TODO: Collapse desing is not yet completed! -->
+                    <div class="collapse position-absolute z-3 mt-1 end-0" id="smartCollapse" style="min-width: 200px;">
+                      <div class="card card-body shadow border">
+                            <a class="dropdowb-item px-3 rounded d-flex justify-content-start align-items-center text-decoration-none gap-2" href="#">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 21C5 17.134 8.13401 14 12 14C15.866 14 19 17.134 19 21M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                <span>Profil</span>
+                            </a>
+                            <a class="dropdowb-item px-3 rounded d-flex justify-content-start align-items-center text-decoration-none gap-2" href="#">
+                                <svg fill="#054188" width="20px" height="20px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 983.613 983.613" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M298.21,33.725h384.727h1.535c5.523,0,10-4.477,10-10V10c0-5.523-4.477-10-10-10h-1.535H298.21h-1.535 c-5.523,0-10,4.477-10,10v13.725c0,5.523,4.477,10,10,10H298.21z"></path> <path d="M245.944,63.641v872.988H138.037c-5.523,0-10,4.479-10,10v26.984c0,5.522,4.477,10,10,10h707.539c5.521,0,10-4.478,10-10 v-26.984c0-5.521-4.479-10-10-10H736.668V63.641c0-5.523-4.477-10-10-10H255.944C250.421,53.641,245.944,58.118,245.944,63.641z M641.232,92.795c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549c0,5.523-4.477,10-10,10h-43.549 c-5.523,0-10-4.477-10-10V92.795z M641.232,180.175c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549 c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V180.175z M641.232,267.554c0-5.522,4.477-10,10-10h43.549 c5.523,0,10,4.478,10,10v43.549c0,5.523-4.477,10-10,10h-43.549c-5.523,0-10-4.477-10-10V267.554z M641.232,354.934 c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.548c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V354.934z M641.232,442.312c0-5.522,4.477-10,10-10h43.549c5.523,0,10,4.478,10,10v43.55c0,5.522-4.477,10-10,10h-43.549 c-5.523,0-10-4.478-10-10V442.312z M641.232,529.693c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549 c0,5.521-4.477,10-10,10h-43.549c-5.523,0-10-4.479-10-10V529.693z M641.232,617.073c0-5.523,4.477-10,10-10h43.549 c5.523,0,10,4.477,10,10v43.549c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V617.073z M641.232,704.452 c0-5.522,4.477-10,10-10h43.549c5.523,0,10,4.478,10,10v43.549c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V704.452z M641.232,791.832c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549c0,5.523-4.477,10-10,10h-43.549 c-5.523,0-10-4.477-10-10V791.832z M641.232,879.212c0-5.522,4.477-10,10-10h43.549c5.523,0,10,4.478,10,10v43.549 c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V879.212z M550.383,92.795c0-5.523,4.477-10,10-10h43.549 c5.523,0,10,4.477,10,10v43.549c0,5.523-4.477,10-10,10h-43.549c-5.523,0-10-4.477-10-10V92.795z M550.383,180.175 c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V180.175z M550.383,267.554c0-5.522,4.477-10,10-10h43.549c5.523,0,10,4.478,10,10v43.549c0,5.523-4.477,10-10,10h-43.549 c-5.523,0-10-4.477-10-10V267.554z M550.383,354.934c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.548 c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V354.934z M550.383,442.312c0-5.522,4.477-10,10-10h43.549 c5.523,0,10,4.478,10,10v43.55c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V442.312z M550.383,529.693 c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549c0,5.521-4.477,10-10,10h-43.549c-5.523,0-10-4.479-10-10V529.693z M550.383,617.073c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549c0,5.522-4.477,10-10,10h-43.549 c-5.523,0-10-4.478-10-10V617.073z M550.383,704.452c0-5.522,4.477-10,10-10h43.549c5.523,0,10,4.478,10,10v43.549 c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V704.452z M550.383,791.832c0-5.523,4.477-10,10-10h43.549 c5.523,0,10,4.477,10,10v43.549c0,5.523-4.477,10-10,10h-43.549c-5.523,0-10-4.477-10-10V791.832z M459.532,92.795 c0-5.523,4.478-10,10-10h43.55c5.521,0,10,4.477,10,10v43.549c0,5.523-4.479,10-10,10h-43.55c-5.522,0-10-4.477-10-10V92.795z M459.532,180.175c0-5.523,4.478-10,10-10h43.55c5.521,0,10,4.477,10,10v43.549c0,5.522-4.479,10-10,10h-43.55 c-5.522,0-10-4.478-10-10V180.175z M459.532,267.554c0-5.522,4.478-10,10-10h43.55c5.521,0,10,4.478,10,10v43.549 c0,5.523-4.479,10-10,10h-43.55c-5.522,0-10-4.477-10-10V267.554z M459.532,354.934c0-5.523,4.478-10,10-10h43.55 c5.521,0,10,4.477,10,10v43.548c0,5.522-4.479,10-10,10h-43.55c-5.522,0-10-4.478-10-10V354.934z M459.532,442.312 c0-5.522,4.478-10,10-10h43.55c5.521,0,10,4.478,10,10v43.55c0,5.522-4.479,10-10,10h-43.55c-5.522,0-10-4.478-10-10V442.312z M459.532,529.693c0-5.523,4.478-10,10-10h43.55c5.521,0,10,4.477,10,10v43.549c0,5.521-4.479,10-10,10h-43.55 c-5.522,0-10-4.479-10-10V529.693z M459.532,617.073c0-5.523,4.478-10,10-10h43.55c5.521,0,10,4.477,10,10v43.549 c0,5.522-4.479,10-10,10h-43.55c-5.522,0-10-4.478-10-10V617.073z M459.532,704.452c0-5.522,4.478-10,10-10h43.55 c5.521,0,10,4.478,10,10v43.549c0,5.522-4.479,10-10,10h-43.55c-5.522,0-10-4.478-10-10V704.452z M459.532,791.832 c0-5.523,4.478-10,10-10h43.55c5.521,0,10,4.477,10,10v43.549c0,5.523-4.479,10-10,10h-43.55c-5.522,0-10-4.477-10-10V791.832z M368.681,92.795c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549c0,5.523-4.477,10-10,10h-43.549 c-5.523,0-10-4.477-10-10V92.795z M368.681,180.175c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549 c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V180.175z M368.681,267.554c0-5.522,4.477-10,10-10h43.549 c5.523,0,10,4.478,10,10v43.549c0,5.523-4.477,10-10,10h-43.549c-5.523,0-10-4.477-10-10V267.554z M368.681,354.934 c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.548c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V354.934z M368.681,442.312c0-5.522,4.477-10,10-10h43.549c5.523,0,10,4.478,10,10v43.55c0,5.522-4.477,10-10,10h-43.549 c-5.523,0-10-4.478-10-10V442.312z M368.681,529.693c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549 c0,5.521-4.477,10-10,10h-43.549c-5.523,0-10-4.479-10-10V529.693z M368.681,617.073c0-5.523,4.477-10,10-10h43.549 c5.523,0,10,4.477,10,10v43.549c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V617.073z M368.681,704.452 c0-5.522,4.477-10,10-10h43.549c5.523,0,10,4.478,10,10v43.549c0,5.522-4.477,10-10,10h-43.549c-5.523,0-10-4.478-10-10V704.452z M368.681,791.832c0-5.523,4.477-10,10-10h43.549c5.523,0,10,4.477,10,10v43.549c0,5.523-4.477,10-10,10h-43.549 c-5.523,0-10-4.477-10-10V791.832z M368.681,879.212c0-5.522,4.477-10,10-10h44.111h9.438h118.153h9.438h44.111 c5.523,0,10,4.478,10,10v43.549c0,5.522-4.477,10-10,10H559.82h-9.438H432.23h-9.438h-44.111c-5.523,0-10-4.478-10-10V879.212 L368.681,879.212z M277.831,92.795c0-5.523,4.477-10,10-10h43.549c5.522,0,10,4.477,10,10v43.549c0,5.523-4.478,10-10,10h-43.549 c-5.523,0-10-4.477-10-10V92.795z M277.831,180.175c0-5.523,4.477-10,10-10h43.549c5.522,0,10,4.477,10,10v43.549 c0,5.522-4.478,10-10,10h-43.549c-5.523,0-10-4.478-10-10V180.175z M277.831,267.554c0-5.522,4.477-10,10-10h43.549 c5.522,0,10,4.478,10,10v43.549c0,5.523-4.478,10-10,10h-43.549c-5.523,0-10-4.477-10-10V267.554z M277.831,354.934 c0-5.523,4.477-10,10-10h43.549c5.522,0,10,4.477,10,10v43.548c0,5.522-4.478,10-10,10h-43.549c-5.523,0-10-4.478-10-10V354.934z M277.831,442.312c0-5.522,4.477-10,10-10h43.549c5.522,0,10,4.478,10,10v43.55c0,5.522-4.478,10-10,10h-43.549 c-5.523,0-10-4.478-10-10V442.312z M277.831,529.693c0-5.523,4.477-10,10-10h43.549c5.522,0,10,4.477,10,10v43.549 c0,5.521-4.478,10-10,10h-43.549c-5.523,0-10-4.479-10-10V529.693z M277.831,617.073c0-5.523,4.477-10,10-10h43.549 c5.522,0,10,4.477,10,10v43.549c0,5.522-4.478,10-10,10h-43.549c-5.523,0-10-4.478-10-10V617.073z M277.831,704.452 c0-5.522,4.477-10,10-10h43.549c5.522,0,10,4.478,10,10v43.549c0,5.522-4.478,10-10,10h-43.549c-5.523,0-10-4.478-10-10V704.452z M277.831,791.832c0-5.523,4.477-10,10-10h43.549c5.522,0,10,4.477,10,10v43.549c0,5.523-4.478,10-10,10h-43.549 c-5.523,0-10-4.477-10-10V791.832z M277.831,879.212c0-5.522,4.477-10,10-10h43.549c5.522,0,10,4.478,10,10v43.549 c0,5.522-4.478,10-10,10h-43.549c-5.523,0-10-4.478-10-10V879.212z"></path> </g> </g> </g></svg>
+                                <span>E-Noveco</span>
+                            </a>
+                            <a class="dropdowb-item px-3 rounded d-flex justify-content-start align-items-center text-decoration-none gap-2" href="#">
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="10" cy="6" r="4" stroke="#1C274C" stroke-width="1.5"></circle> <path d="M21 10H19M19 10H17M19 10L19 8M19 10L19 12" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> <path d="M17.9975 18C18 17.8358 18 17.669 18 17.5C18 15.0147 14.4183 13 10 13C5.58172 13 2 15.0147 2 17.5C2 19.9853 2 22 10 22C12.231 22 13.8398 21.8433 15 21.5634" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
+                                <span>
+                                    Créer un nouvel utilisateur
+                                </span>
+                            </a>
+                            <a class="dropdowb-item px-3 rounded d-flex justify-content-start align-items-center text-decoration-none gap-2" href="#">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 20.75H6C5.27065 20.75 4.57118 20.4603 4.05546 19.9445C3.53973 19.4288 3.25 18.7293 3.25 18V6C3.25 5.27065 3.53973 4.57118 4.05546 4.05546C4.57118 3.53973 5.27065 3.25 6 3.25H12C12.1989 3.25 12.3897 3.32902 12.5303 3.46967C12.671 3.61032 12.75 3.80109 12.75 4C12.75 4.19891 12.671 4.38968 12.5303 4.53033C12.3897 4.67098 12.1989 4.75 12 4.75H6C5.66848 4.75 5.35054 4.8817 5.11612 5.11612C4.8817 5.35054 4.75 5.66848 4.75 6V18C4.75 18.3315 4.8817 18.6495 5.11612 18.8839C5.35054 19.1183 5.66848 19.25 6 19.25H18C18.3315 19.25 18.6495 19.1183 18.8839 18.8839C19.1183 18.6495 19.25 18.3315 19.25 18V12C19.25 11.8011 19.329 11.6103 19.4697 11.4697C19.6103 11.329 19.8011 11.25 20 11.25C20.1989 11.25 20.3897 11.329 20.5303 11.4697C20.671 11.6103 20.75 11.8011 20.75 12V18C20.75 18.7293 20.4603 19.4288 19.9445 19.9445C19.4288 20.4603 18.7293 20.75 18 20.75Z" fill="#000000"></path> <path d="M20 8.75C19.8019 8.74741 19.6126 8.66756 19.4725 8.52747C19.3324 8.38737 19.2526 8.19811 19.25 8V4.75H16C15.8011 4.75 15.6103 4.67098 15.4697 4.53033C15.329 4.38968 15.25 4.19891 15.25 4C15.25 3.80109 15.329 3.61032 15.4697 3.46967C15.6103 3.32902 15.8011 3.25 16 3.25H20C20.1981 3.25259 20.3874 3.33244 20.5275 3.47253C20.6676 3.61263 20.7474 3.80189 20.75 4V8C20.7474 8.19811 20.6676 8.38737 20.5275 8.52747C20.3874 8.66756 20.1981 8.74741 20 8.75Z" fill="#000000"></path> <path d="M13.5 11.25C13.3071 11.2352 13.1276 11.1455 13 11C12.877 10.8625 12.809 10.6845 12.809 10.5C12.809 10.3155 12.877 10.1375 13 10L19.5 3.5C19.5687 3.42631 19.6515 3.36721 19.7435 3.32622C19.8355 3.28523 19.9348 3.26319 20.0355 3.26141C20.1362 3.25963 20.2362 3.27816 20.3296 3.31588C20.423 3.3536 20.5078 3.40974 20.579 3.48096C20.6503 3.55218 20.7064 3.63701 20.7441 3.7304C20.7818 3.82379 20.8004 3.92382 20.7986 4.02452C20.7968 4.12523 20.7748 4.22454 20.7338 4.31654C20.6928 4.40854 20.6337 4.49134 20.56 4.56L14 11C13.8724 11.1455 13.6929 11.2352 13.5 11.25Z" fill="#000000"></path> </g></svg>
+                                <span>Déconnexion</span>
+                            </a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Menu button container -->
+          <div class="menu-button-container d-xl-none">
+            <a class="menu-button" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <!-- Offcanvas header -->
+          <div class="offcanvas-header">
+            <span class="offcanvas-title" id="offcanvasExampleLabel">
+              <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="./assets/logo.png" alt="novocology-logo">
+              </a>
+            </span>
+            <span type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+              <i class="fa-solid fa-xmark fs-1" style="color: #054188"></i>
+            </span>
+          </div>
+
+          <!-- Offcanvas body -->
+          <div class="offcanvas-body">
+            <!-- Menu links -->
+            <div>
+              <ul class="list-unstyled text-center text-md-start">
+                <li class="text-capitalize my-md-2">
+                  <a href="#" class="text-decoration-none" style="font-size: 15px;">clients</a>
+                </li>
+                <li class="my-2">
+                  <a href="#" class="text-decoration-none" style="font-size: 15px;">chantiers</a>
+                </li>
+                <li class="my-2">
+                  <a href="#" class="text-decoration-none" style="font-size: 15px;">tickets</a>
+                </li>
+                <li class="my-2">
+                  <a href="#" class="text-decoration-none" style="font-size: 15px;">planning</a>
+                </li>
+                <li class="my-2">
+                  <a href="#" class="text-decoration-none" style="font-size: 15px;">ringover</a>
+                </li>
+                <li class="my-2">
+                  <a href="#" class="text-decoration-none" style="font-size: 15px;">agenda</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </main>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- JS for Search Functionality -->
+    <script src="./novo.js"></script>
+  </body>
+</html>
